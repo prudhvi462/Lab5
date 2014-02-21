@@ -52,3 +52,11 @@ from customers c,agents a
 where c.city=a.city
 
 --7. Get the name and city of customers who live in the city where the least number of products are made.
+
+select distinct c.name, c.city 
+from customers c
+where c.city in ( select city 
+                  from products
+		  group by city
+		  order by count(quantity)
+		  limit 1 ) ;
