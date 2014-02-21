@@ -1,4 +1,10 @@
-﻿--1. Get the cities of agents booking an order for customer “Basics”. This time use joins; no subqueries.
+﻿--Name: Prudhvi Krishna Narra
+--CWID:200 54 101
+--Date:2/20/2014
+
+
+
+--1. Get the cities of agents booking an order for customer “Basics”. This time use joins; no subqueries.
 
 select a.city from agents a
 join orders o
